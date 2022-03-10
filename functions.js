@@ -158,8 +158,5 @@ export function getLastItem(array) {
 // Ask yourself: even if you cannot predict the result exactly, what _do_ you know about what it should return? Use that expectation to write your test
 
 export function getRandomNumber() {
-
-    const randoNumber = Math.floor(Math.random() * (0, 5));
-    
-    return randoNumber;
+    return Math.floor(Math.random() * 5);
 }

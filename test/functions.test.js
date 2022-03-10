@@ -109,9 +109,8 @@ test('lastItem', (expect) => {
 });
 
 test('randoNumber', (expect) => {
-    const expected = 0 || 1 || 2 || 3 || 4 || 5;
 
-    const actual = getRandomNumber(0, 1, 2, 3, 4, 5);
+    const answer = getRandomNumber();
 
-    expect.equal(actual, expected);
+    expect.equal(typeof answer, 'number');
 });
